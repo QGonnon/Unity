@@ -31,6 +31,7 @@ public class CoinCollectable : MonoBehaviour
 
         Debug.Log(other.name);
         if (other.name == "Player") {
+            ScoreManager.score += 1;
             Destroy(this.gameObject);
         }
     }
